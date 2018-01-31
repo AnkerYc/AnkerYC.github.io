@@ -1,69 +1,83 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head><link href="images/10.ico" rel="shortcut icon"><title>Anker</title>
-<meta charset=utf-8" />
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style02.css" rel='stylesheet' type='text/css' />
+<head>
+<meta charset="UTF-8">
+<link href="images/10.ico" rel="shortcut icon">
+	<title>Anker</title>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+/* Custom Styles */
+    ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("#myNav").affix({
+        offset: { 
+            top: 125 
+      }
+    });
+});
+</script>
 </head>
-<body>
-<div class="header">
-	<div class="container">
-			<div class="top-nav">
-				<nav class="nav1">
-					<ul class="simple-toggle" id="menu">
-			        	<li class="active"><a href="index.html">主页面</a></li>
-			        </ul>
-				</nav>
-			</div>
-	</div>
-</div>
-			 <div class="clearfix"> </div>
-		</div> 
-      </div>  
-	<div class="box_1">
-     <div class="container">
-      <div class="col-md-4 col_1">
-      	<h4>1</h4>
-      	<h5>暂无标题</h5>
-      	<p> 暂无内容</p>
-      </div>
-      <div class="col-md-4 col_1">
-      	<h4>2</h4>
-      	<h5>暂无标题</h5>
-      	<p>暂无内容</p>
-      </div>
-      <div class="col-md-4 col_1">
-      	<h4>3</h4>
-      	<h5>暂无标题</h5>
-      	<p>暂无内容</p>
-      </div>
-      <div class="clearfix"> </div>
-     </div>
+<body data-spy="scroll" data-target="#myScrollspy">
+<div class="container">
+   <div class="jumbotron">
+        <h1>Bootstrap Affix</h1>
     </div>
-   <div class="contact wow fadeInLeft"  data-wow-delay="0.0s" id="contact">
-   	 <div class="container">
-   		<div class="col-md-6 contact_left">
-   			<h3>联系我</h3>
-   			<div class="footer_lists">
-					<ul class="list">
-					   <h5>联系方式 :</h5>
-					   <li>邮箱 ： ofsanker@qq.com</li>
-					   <li>QQ : 3490741614</li>
-					</ul>
-				    <div class="clearfix"> </div>
-			</div>
-   		</div>
-   		<div class="clearfix"> </div>
-   	</div>
-   </div>
-   <div class="footer">
-   	 <div class="container">
-   	 	<div class="footer_nav1">
-			<ul>
-	        	<li><a href="index.html">主页面</a></li>
-	        </ul>
-		 </div>
-       </div>
-     </div>
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" id="myNav">
+                <li class="active"><a href="#section-1">第一部分</a></li>
+                <li><a href="#section-2">第二部分</a></li>
+                <li><a href="#section-3">第三部分</a></li>
+                <li><a href="#section-4">第四部分</a></li>
+                <li><a href="#section-5">第五部分</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <h2 id="section-1">联系方式</h2>
+            <p>QQ ： 3490741614
+	<br>邮箱 ： ofsanker@qq.com	
+		</p>
+            
+            <hr>
+         
+        </div>
+    </div>
+</div>
 </body>
-</html>		
+</html>
