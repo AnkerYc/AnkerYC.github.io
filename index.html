@@ -1,79 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <link href="images/10.ico" rel="shortcut icon">
-	<title>Anker</title>
-<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-/* Custom Styles */
-    ul.nav-tabs{
-        width: 140px;
-        margin-top: 20px;
-        border-radius: 4px;
-        border: 1px solid #ddd;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
-    }
-    ul.nav-tabs li{
-        margin: 0;
-        border-top: 1px solid #ddd;
-    }
-    ul.nav-tabs li:first-child{
-        border-top: none;
-    }
-    ul.nav-tabs li a{
-        margin: 0;
-        padding: 8px 16px;
-        border-radius: 0;
-    }
-    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
-        color: #fff;
-        background: #0088cc;
-        border: 1px solid #0088cc;
-    }
-    ul.nav-tabs li:first-child a{
-        border-radius: 4px 4px 0 0;
-    }
-    ul.nav-tabs li:last-child a{
-        border-radius: 0 0 4px 4px;
-    }
-    ul.nav-tabs.affix{
-        top: 30px; /* Set the top position of pinned element */
-    }
-</style>
-<script>
-$(document).ready(function(){
-    $("#myNav").affix({
-        offset: { 
-            top: 125 
-      }
-    });
-});
-</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ancker</title>
+<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
 </head>
-<body data-spy="scroll" data-target="#myScrollspy">
-<div class="container">
-   <div class="jumbotron">
-        <h1>Ancker</h1>
-    </div>
-    <div class="row">
-        <div class="col-xs-3" id="myScrollspy">
-            <ul class="nav nav-tabs nav-stacked" id="myNav">
-                <li class="active"><a href="#section-1">第一部分</a></li>
-            </ul>
-        </div>
-        <div class="col-xs-9">
-            <h2 id="section-1">联系方式</h2>
-            <p>QQ ： 3490741614
-	<br>邮箱 ： ofsanker@qq.com	
+<body>
+<div class="container"> 
+  <header class="header">
+    <h4 class="logo">Ancker</h4>
+  </header>
+  <section class="intro">
+    <div class="column">
+      <h3>毛泽东(1893年12月26日-1976年09月09日)</h3>
+      <img src="images/profile.png" alt="" class="profile"> </div>
+    <div class="column">
+      <p>毛泽东(1893年12月26日－1976年9月9日),字润之（原作咏芝，后改润芝）,笔名子任。湖南湘潭人.中国人民的领袖,马克思主义者,伟大的无产阶级革命家、战略家和理论家,中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人,诗人,书法家。
 		</p>
-            
-            <hr>
-         
-        </div>
+      <p>本站遵守社会主义核心价值观理念:<br>
+		  <b>富强、民主、文明、和谐 、自由、平等、公正、法治 个人层面,爱国、敬业、诚信、友善
+</p>
     </div>
+  </section>
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="images/1.png" alt="" width="2000" class="cards"/></a>
+      <h4>翻译系统</h4>
+      <p class="tag">Python</p>
+      <p class="text_column">主要运用了有道的翻译接口<br>百度云链接: https://pan.baidu.com/s/1i67K2ED <br>密码: 4dvm</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>葫芦侠某论坛图片爬取</h4>
+      <p class="tag">Python</p>
+      <p class="text_column">找到论坛接口,暴力爬取并运用TK开发界面
+		<BR>百度云链接: https://pan.baidu.com/s/1smo7tLV <br>密码: 6gwh
+		</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/0.png" alt="" width="2000" class="cards"/></a>
+      <h4>百度贴吧某吧搞笑视频爬取</h4>
+      <p class="tag">Python</p>
+      <p class="text_column">直接循环爬取，代码只有4行！
+		<br>
+		  链接: https://pan.baidu.com/s/1nwbis7B 
+		  <br>密码: y862
+		</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/2.png" alt="" width="2000" class="cards"/></a>
+      <h4>网易新闻</h4>
+      <p class="tag">Python</p>
+      <p class="text_column">这个最简单，其实就是凑个数
+		<br>
+		 链接: https://pan.baidu.com/s/1kXeQycZ 
+		  <br>密码: s4ap
+		</p>
+    </div>
+  </div>
+<!-- Footer Section -->
+  <footer id="contact">
+    <p class="hero_header">QQ:1989615451</p>
+    <div class="button">联系我 </div>
+  </footer>
+  <div class="copyright">&copy;2018 - <strong>By Ancker</strong></div>
 </div>
 </body>
 </html>
